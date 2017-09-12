@@ -13,11 +13,11 @@ The alert is that the disk is running out of space, and the ssm command performs
  
 This assumes a project setup:
 
-|-- project
-   |-- scripts
-   |   `-- aws-lambda-ssm (this project)       
-   `-- terraform
-       `-- ssm_config.tf
+    |-- project
+       |-- scripts
+       |   `-- aws-lambda-ssm (this project)       
+       `-- terraform
+           `-- ssm_config.tf
 
 ### Prereq variables
 
@@ -199,7 +199,7 @@ Subscribe the lambda function to the sns topic so that it triggers when the topi
 You will also need to configure a lambda permission for this:
 
 ```hcl-terraform
-resource "aws_sns_topic_subscription" "sns_docker_clean" {
+resource "aws_sns_topic_subscription" "sns_clean" {
   topic_arn = "${aws_sns_topic.clean_instance.arn}"
   protocol = "lambda"
   endpoint = "${aws_lambda_function.ssm_clean_instance.arn}"
