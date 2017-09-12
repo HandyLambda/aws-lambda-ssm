@@ -1,13 +1,12 @@
 {
   "name": "aws-lambda-ssm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "lambda function for invoking ssm documents against instances",
   "main": "index.js",
   "author": "William Lacy",
   "email": "williamlacyfcl@gmail.com",
-  "license": "ISC",
-  "url": "https://github.com/HandyLambda/aws-lambda-ssm",
   "license": "MIT",
+  "url": "https://github.com/HandyLambda/aws-lambda-ssm",
   "scripts": {
     "package": "zip dist/aws-lambda-ssm.zip index.js",
     "test": "mocha"
