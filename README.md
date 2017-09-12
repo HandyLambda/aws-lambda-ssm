@@ -235,8 +235,8 @@ runtime: nodejs6.10
 
 Insert the following environment variables:
 
-SSM_DOCUMENT: your-ssm-document
-INSTANCE_IDS: i-11111111111,i-22222222222
+ * SSM_DOCUMENT: your-ssm-document
+ * INSTANCE_IDS: i-11111111111,i-22222222222
 
 ### 3. Configure a trigger
 
