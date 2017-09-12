@@ -1,0 +1,20 @@
+{
+  "name": "aws-lambda-ssm",
+  "version": "0.1.0",
+  "description": "lambda function for invoking ssm documents against instances",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "package": "zip dist/aws-lambda-ssm.zip index.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "mocha": "^3.4.2",
+    "proxyquire": "^1.8.0",
+    "sinon": "^2.3.4",
+    "sinon-chai": "^2.11.0"
+  }
+}
